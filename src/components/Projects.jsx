@@ -111,11 +111,23 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="project-links">
-                  <a href={project.link} className="project-link" target="_blank" rel="noopener noreferrer">
+                  <a 
+                    href={project.link} 
+                    className="project-link" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    onClick={(e) => project.link === '#' && e.preventDefault()}
+                  >
                     <span>Voir le projet</span>
                     <span className="arrow">→</span>
                   </a>
-                  <a href={project.github} className="project-github" target="_blank" rel="noopener noreferrer">
+                  <a 
+                    href={project.github} 
+                    className="project-github" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    onClick={(e) => project.github === '#' && e.preventDefault()}
+                  >
                     <span>GitHub</span>
                   </a>
                 </div>
