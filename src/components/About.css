@@ -1,7 +1,7 @@
 .about {
   min-height: 100vh;
   padding: 5rem 2rem;
-  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+  background: var(--bg-primary);
 }
 
 .about-container {
@@ -17,14 +17,14 @@
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #333;
+  color: var(--text-primary);
   margin-bottom: 1rem;
 }
 
 .title-underline {
   width: 80px;
   height: 4px;
-  background: linear-gradient(90deg, #667eea, #764ba2);
+  background: var(--accent-primary);
   margin: 0 auto;
   border-radius: 2px;
 }
@@ -38,14 +38,14 @@
 
 .about-text h3 {
   font-size: 1.8rem;
-  color: #333;
+  color: var(--text-primary);
   margin-bottom: 1.5rem;
 }
 
 .about-text p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #666;
+  color: var(--text-secondary);
   margin-bottom: 1.5rem;
 }
 
@@ -61,33 +61,35 @@
   flex-direction: column;
   align-items: center;
   padding: 1.5rem;
-  background: white;
+  background: var(--bg-secondary);
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(100, 255, 218, 0.1);
   min-width: 120px;
   transition: transform 0.3s ease;
 }
 
 .stat:hover {
   transform: translateY(-5px);
+  border-color: var(--accent-primary);
 }
 
 .stat-number {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #667eea;
+  color: var(--accent-primary);
   margin-bottom: 0.5rem;
 }
 
 .stat-label {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-secondary);
   text-align: center;
 }
 
 .skills-section h3 {
   font-size: 1.8rem;
-  color: #333;
+  color: var(--text-primary);
   margin-bottom: 2rem;
 }
 
@@ -98,16 +100,18 @@
 }
 
 .skill-card {
-  background: white;
+  background: var(--bg-secondary);
   padding: 1.5rem;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(100, 255, 218, 0.1);
   transition: all 0.3s ease;
 }
 
 .skill-card:hover {
   transform: translateX(10px);
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+  border-color: var(--accent-primary);
 }
 
 .skill-header {
@@ -124,11 +128,11 @@
 .skill-name {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #333;
+  color: var(--text-primary);
 }
 
 .skill-bar {
-  background: #f0f0f0;
+  background: var(--bg-tertiary);
   height: 12px;
   border-radius: 6px;
   overflow: hidden;
@@ -137,7 +141,7 @@
 
 .skill-progress {
   height: 100%;
-  background: linear-gradient(90deg, #667eea, #764ba2);
+  background: var(--accent-primary);
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -150,7 +154,7 @@
 .skill-level {
   font-size: 0.75rem;
   font-weight: 600;
-  color: white;
+  color: var(--bg-primary);
   position: absolute;
   right: 0.5rem;
 }

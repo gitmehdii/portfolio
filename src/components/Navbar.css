@@ -10,9 +10,9 @@
 }
 
 .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(10, 25, 47, 0.95);
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   padding: 1rem 2rem;
 }
 
@@ -34,18 +34,18 @@
 .logo-text {
   font-size: 1.8rem;
   font-weight: 700;
-  color: white;
+  color: var(--text-primary);
   transition: color 0.3s ease;
 }
 
 .navbar.scrolled .logo-text {
-  color: #333;
+  color: var(--text-primary);
 }
 
 .logo-dot {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #ffd700;
+  color: var(--accent-primary);
   margin-left: 2px;
 }
 
@@ -68,13 +68,13 @@
   display: block;
   width: 100%;
   height: 3px;
-  background: white;
+  background: var(--text-primary);
   transition: all 0.3s ease;
   border-radius: 2px;
 }
 
 .navbar.scrolled .hamburger span {
-  background: #333;
+  background: var(--text-primary);
 }
 
 .hamburger.open span:nth-child(1) {
@@ -102,7 +102,7 @@
 }
 
 .navbar-link {
-  color: white;
+  color: var(--text-primary);
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
@@ -116,7 +116,7 @@
 }
 
 .navbar.scrolled .navbar-link {
-  color: #333;
+  color: var(--text-primary);
 }
 
 .navbar-link::after {
@@ -126,7 +126,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: #ffd700;
+  background: var(--accent-primary);
   transition: width 0.3s ease;
 }
 
@@ -135,11 +135,11 @@
 }
 
 .navbar-link:hover {
-  color: #ffd700;
+  color: var(--accent-primary);
 }
 
 .navbar.scrolled .navbar-link:hover {
-  color: #667eea;
+  color: var(--accent-primary);
 }
 
 @media (max-width: 768px) {
@@ -154,11 +154,11 @@
     width: 70%;
     max-width: 300px;
     height: 100vh;
-    background: white;
+    background: var(--bg-secondary);
     flex-direction: column;
     gap: 0;
     padding: 5rem 2rem 2rem;
-    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.5);
     transition: right 0.3s ease;
   }
 
@@ -168,7 +168,7 @@
 
   .navbar-item {
     width: 100%;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid rgba(100, 255, 218, 0.1);
   }
 
   .navbar-link {
@@ -176,7 +176,7 @@
     width: 100%;
     text-align: left;
     padding: 1rem 0;
-    color: #333;
+    color: var(--text-primary);
   }
 
   .navbar-link::after {
@@ -184,8 +184,8 @@
   }
 
   .navbar-link:hover {
-    color: #667eea;
-    background: #f8f9fa;
+    color: var(--accent-primary);
+    background: rgba(100, 255, 218, 0.05);
     padding-left: 1rem;
   }
 }

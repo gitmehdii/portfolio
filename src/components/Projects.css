@@ -1,7 +1,7 @@
 .projects {
   min-height: 100vh;
   padding: 5rem 2rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--bg-secondary);
 }
 
 .projects-container {
@@ -17,21 +17,21 @@
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: white;
+  color: var(--text-primary);
   margin-bottom: 1rem;
 }
 
 .title-underline {
   width: 80px;
   height: 4px;
-  background: #ffd700;
+  background: var(--accent-primary);
   margin: 0 auto 1rem;
   border-radius: 2px;
 }
 
 .section-description {
   font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--text-secondary);
 }
 
 .filter-buttons {
@@ -44,25 +44,26 @@
 
 .filter-btn {
   padding: 0.75rem 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  color: var(--text-secondary);
+  border: 2px solid rgba(100, 255, 218, 0.3);
   border-radius: 30px;
   cursor: pointer;
   font-weight: 600;
   transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
 }
 
 .filter-btn:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(100, 255, 218, 0.1);
+  color: var(--accent-primary);
+  border-color: var(--accent-primary);
   transform: translateY(-2px);
 }
 
 .filter-btn.active {
-  background: #ffd700;
-  color: #333;
-  border-color: #ffd700;
+  background: transparent;
+  color: var(--accent-primary);
+  border-color: var(--accent-primary);
 }
 
 .projects-grid {
@@ -72,10 +73,11 @@
 }
 
 .project-card {
-  background: white;
+  background: var(--bg-primary);
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(100, 255, 218, 0.1);
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -83,12 +85,13 @@
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  border-color: var(--accent-primary);
 }
 
 .project-image {
   height: 200px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--bg-tertiary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,13 +115,13 @@
 .project-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #333;
+  color: var(--text-primary);
   margin: 0;
 }
 
 .project-description {
   font-size: 1rem;
-  color: #666;
+  color: var(--text-secondary);
   line-height: 1.6;
   margin: 0;
   flex: 1;
@@ -132,11 +135,12 @@
 
 .tech-tag {
   padding: 0.4rem 0.8rem;
-  background: #f0f0f0;
-  color: #667eea;
+  background: rgba(100, 255, 218, 0.1);
+  color: var(--accent-primary);
   border-radius: 20px;
   font-size: 0.85rem;
   font-weight: 600;
+  border: 1px solid rgba(100, 255, 218, 0.2);
 }
 
 .project-links {
@@ -161,22 +165,27 @@
 }
 
 .project-link {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: transparent;
+  color: var(--accent-primary);
+  border: 1px solid var(--accent-primary);
 }
 
 .project-link:hover {
+  background: rgba(100, 255, 218, 0.1);
   transform: translateX(5px);
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 15px rgba(100, 255, 218, 0.3);
 }
 
 .project-github {
-  background: #333;
-  color: white;
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--text-secondary);
 }
 
 .project-github:hover {
-  background: #555;
+  background: rgba(136, 146, 176, 0.1);
+  color: var(--text-primary);
+  border-color: var(--text-primary);
   transform: scale(1.05);
 }
 
